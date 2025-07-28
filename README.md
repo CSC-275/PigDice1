@@ -60,26 +60,28 @@ roll or hold? (r/h): r
 Die: 3
 roll or hold? (r/h): r
 Die: 3
-roll or hold? (r/h): r
-Die: 5
 roll or hold? (r/h): h
-Score for turn:13
-Total score:19
+Score for turn:8
+Total score:14
 
 
 TURN 3
 roll or hold? (r/h): r
+Die: 4
+roll or hold? (r/h): r
 Die: 1
 Turn over. No score.
 Score for turn:0
-Total score:19
+Total score:14
 
 
 TURN 4
 roll or hold? (r/h): r
 Die: 2
+roll or hold? (r/h): r
+Die: 5
 roll or hold? (r/h): h
-Score for turn:2
+Score for turn:7
 Total score:21
 
 You finished with a final score of 20 or more in 4 turns!</b></pre>

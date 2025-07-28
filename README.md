@@ -22,7 +22,7 @@ Complete the PigDice1.cpp template provided which should use the procedural prog
 <li>roll function</li>
 <li>hold function</li></ul>
 <li>Pass parameters by reference between functions</li>
-<li>Loop constructs like while loop</li>
+<li>Make use of loop constructs like the while loop</li>
 <li>Make use of the GameState structure provided in the template</li>
 </ul>
 

@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: Test
-        setup-command: g++ pigdice1.cpp -o test
+        setup-command: g++ PigDice1.cpp -o test
         command: "./test"
         input: |
           r

@@ -1,0 +1,91 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Test
+      id: test
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: Test
+        setup-command: g++ pigdice1.cpp -o test
+        command: "./test"
+        input: |
+          r
+          r
+          t
+          r
+          r
+          r
+          r
+          r
+          h
+          r
+          r
+          r
+          h
+        expected-output: |-
+          TURN 1
+          roll or hold? (r/h): r
+          Die: 2
+          roll or hold? (r/h): r
+          Die: 6
+          roll or hold? (r/h): t
+          Invalid choice. Try again.roll or hold? (r/h): r
+          Die: 1
+          Turn over. No score.
+          Score for turn:0
+          Total score:0
+
+
+          TURN 2
+          roll or hold? (r/h): r
+          Die: 1
+          Turn over. No score.
+          Score for turn:0
+          Total score:0
+
+
+          TURN 3
+          roll or hold? (r/h): r
+          Die: 3
+          roll or hold? (r/h): r
+          Die: 5
+          roll or hold? (r/h): r
+          Die: 3
+          roll or hold? (r/h): h
+          Score for turn:11
+          Total score:11
+
+
+          TURN 4
+          roll or hold? (r/h): r
+          Die: 4
+          roll or hold? (r/h): r
+          Die: 4
+          roll or hold? (r/h): r
+          Die: 2
+          roll or hold? (r/h): h
+          Score for turn:10
+          Total score:21
+
+          You finished with a final score of 20 or more in 4 turns!
+        comparison-method: contains
+        timeout: 1
+        max-score: 15
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        TEST_RESULTS: "${{steps.test.outputs.result}}"
+      with:
+        runners: test

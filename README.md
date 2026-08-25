@@ -80,4 +80,4 @@ roll or hold? (r/h): h
 Score Banked This Turn: 9
 
 You finished with a final score of 24 in 5 turns!
-Thanks for playing Pig Dice!</b></pre>
+Thanks for playing PIG Dice!</b></pre>

@@ -36,56 +36,48 @@ Complete the PigDice1.cpp template provided which should use the procedural prog
 ### Test Case Output
 <pre><b>Let's Play PIG Dice!
 
-* See how many turns it takes you to get to 20.
+* See how many turns it takes you to get to 20 points.
 * Turn ends when you hold or roll a 1.
 * If you roll a 1, you lose all points for the turn.
-* If you hold, you save all points for the turn.
+* If you hold, you bank all points for the turn to the game score.
 
-TURN 1
-roll or hold? (r/h): r
-Die: 4
-roll or hold? (r/h): r
-Die: 2
-roll or hold? (r/h): h
-Score for turn:6
-Total score:6
-
-
-TURN 2
-roll or hold? (r/h): k
-Invalid choice! Try again.
-roll or hold? (r/h): r
-Die: 2
-roll or hold? (r/h): r
-Die: 3
-roll or hold? (r/h): r
-Die: 3
-roll or hold? (r/h): h
-Score for turn:8
-Total score:14
-
-
-TURN 3
-roll or hold? (r/h): r
-Die: 4
+TURN 1 - Game Score: 0
 roll or hold? (r/h): r
 Die: 1
 Turn over. No score.
-Score for turn:0
-Total score:14
+Score Banked This Turn: 0
 
-
-TURN 4
+TURN 2 - Game Score: 0
 roll or hold? (r/h): r
-Die: 2
+Die: 2 - Running score this turn: 2
 roll or hold? (r/h): r
-Die: 5
+Die: 4 - Running score this turn: 6
 roll or hold? (r/h): h
-Score for turn:7
-Total score:21
+Score Banked This Turn: 6
 
-You finished with a final score of 20 or more in 4 turns!</b></pre>
+TURN 3 - Game Score: 6
+roll or hold? (r/h): r
+Die: 6 - Running score this turn: 6
+roll or hold? (r/h): r
+Die: 1
+Turn over. No score.
+Score Banked This Turn: 0
 
+TURN 4 - Game Score: 6
+roll or hold? (r/h): r
+Die: 3 - Running score this turn: 3
+roll or hold? (r/h): r
+Die: 6 - Running score this turn: 9
+roll or hold? (r/h): h
+Score Banked This Turn: 9
 
+TURN 5 - Game Score: 15
+roll or hold? (r/h): r
+Die: 4 - Running score this turn: 4
+roll or hold? (r/h): r
+Die: 5 - Running score this turn: 9
+roll or hold? (r/h): h
+Score Banked This Turn: 9
 
-
+You finished with a final score of 24 in 5 turns!
+Thanks for playing Pig Dice!</b></pre>

@@ -1,4 +1,4 @@
-# Pig Dice 1.0
+# Pig Dice
 
 ## Background
 Pig Dice is a simple game using one standard (6 sided) die. 
@@ -12,7 +12,7 @@ Rules of Pig Dice:
 </ol>
 
 ## Directions
-Complete the PigDice1.cpp template provided which should use the procedural programming approach presented in CSC 175 to implement the Pig Dice game described above. 
+Complete the PigDice.cpp template provided which should use the procedural programming approach presented in CSC 175 to implement the Pig Dice game described above. 
 
 ### Your solution code should include the following:
 <ul>

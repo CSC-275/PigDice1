@@ -1,5 +1,7 @@
 #include <iostream>
 
+// Build your solution starting from this code.
+
 struct GameState {
     char choice;
     int turn_count = 0;
@@ -9,13 +11,9 @@ struct GameState {
     bool turn_over = false;
 };
 
-
 int main() {
-
-    GameState my_game;
-
-    display_rules();
-    play_game(my_game);
+    GameState my_game; // instantiate a GameState object
+    display_rules(); // call the display_rules function
+    play_game(my_game); // call the play_game function and pass the GameState object
     return 0;
 }
-

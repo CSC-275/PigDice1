@@ -11,6 +11,7 @@ struct GameState {
     bool turn_over = false;
 };
 
+
 void addScore(GameState &gs) {
     gs.game_score += 10;
 }
